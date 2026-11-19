@@ -23,13 +23,12 @@
  */
 
 window.FIREBASE_CONFIG = window.FIREBASE_CONFIG || {
-  apiKey: "AIzaSyDN3YxOpqxqfBQgHOvtFk6JJvztlV3vTH8",
-  authDomain: "deargift-e6488.firebaseapp.com",
-  projectId: "deargift-e6488",
-  storageBucket: "deargift-e6488.appspot.com",
-  messagingSenderId: "391379008795",
-  appId: "1:391379008795:web:4b1c98f17f824690e2e7be",
-  measurementId: "G-VGBLRMQM9L"
+  apiKey: "AIzaSyCBrf26Tnocmb4anx8g-RqGXdvtIFznaNY",
+  authDomain: "gen-lang-client-0628392073.firebaseapp.com",
+  projectId: "gen-lang-client-0628392073",
+  storageBucket: "gen-lang-client-0628392073.firebasestorage.app",
+  messagingSenderId: "969634316058",
+  appId: "1:969634316058:web:f9bc1eb4f603798289b6a3"
 };
 
 // =========================================================================
