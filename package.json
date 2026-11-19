@@ -1,0 +1,17 @@
+{
+  "name": "dlove-vn-clone",
+  "version": "1.0.0",
+  "description": "Toàn bộ source code website https://dlove.vn/ - Tạo Website Quà Tặng Số",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "dlove",
+    "gift-website",
+    "clone"
+  ],
+  "author": "",
+  "license": "ISC"
+}

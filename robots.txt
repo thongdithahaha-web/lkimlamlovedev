@@ -1,0 +1,68 @@
+# robots.txt for DLove Website
+# Chỉ dẫn cho các search engine bots
+
+# Cho phép tất cả bot tốt (Google, Bing, etc.)
+User-agent: *
+Allow: /
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+Allow: /galaxy-viewer
+Allow: /galaxy-viewer.html
+
+# Chặn các trang quản lý và private
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /createqr
+Disallow: /galaxy/create
+Disallow: /offline
+Disallow: /access-denied
+
+# Chặn các file và thư mục không cần thiết
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?* # Chặn các URL có query parameters (trừ khi cần thiết)
+
+# Chặn các bot xấu/spam
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Cho phép Google và Bing (bot tốt)
+User-agent: Googlebot
+Allow: /
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+Allow: /galaxy-viewer
+Allow: /galaxy-viewer.html
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /createqr
+Disallow: /galaxy/create
+
+User-agent: Bingbot
+Allow: /
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+Allow: /galaxy-viewer
+Allow: /galaxy-viewer.html
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /createqr
+Disallow: /galaxy/create
+
+# Crawl-delay để giảm tải server (tùy chọn)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://dlove.vn/sitemap.xml

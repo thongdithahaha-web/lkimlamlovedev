@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/songs/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Content-Type", "value": "audio/mpeg" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/firebase-config.js", "destination": "/firebase-config.js" },
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/songs/(.*)", "destination": "/songs/$1" },
+    { "source": "/createqr/(.*)", "destination": "/createqr/$1" },
+    { "source": "/images/(.*)", "destination": "/images/$1" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/terms", "destination": "/terms/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/tao-website-sinh-nhat", "destination": "/tao-website-sinh-nhat/index.html" },
+    { "source": "/galaxy-viewer", "destination": "/galaxy-viewer.html" },
+    { "source": "/galaxy", "destination": "/galaxy.html" },
+    { "source": "/heartqr.html", "destination": "/heartqr.html" },
+    { "source": "/ket-qua.html", "destination": "/ket-qua.html" },
+    { "source": "/config.html", "destination": "/config.html" },
+    { "source": "/config2.html", "destination": "/config2.html" },
+    { "source": "/((?!.*\\.[\\w]+$).*)", "destination": "/index.html" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DLove - Tạo Website Quà Tặng Số",
+  "short_name": "DLove",
+  "description": "Tạo website quà tặng số đẹp miễn phí cho Valentine, sinh nhật, Tết, ngày lễ",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFF0F5",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

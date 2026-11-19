@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLove</title>
+    <meta name="theme-color" content="#FFF0F5" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Google Fonts async (để route động vẫn có font thương hiệu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@1,400;1,600&display=swap"
+      media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@1,400;1,600&display=swap">
+    </noscript>
+
+    <!-- Shell loading UI (CSS thuần, hiển thị trước khi React mount) -->
+    <style>
+      html, body { margin: 0; height: 100%; background: #FFFFFF; }
+      #root { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+      .dlove-shell-logo { width: 64px; height: 64px; -o-object-fit: contain; object-fit: contain; }
+      .dlove-shell-spinner {
+        width: 40px; height: 40px; border-radius: 50%;
+        border: 3px solid #FFE0EC;
+        border-top-color: #FF4F86;
+        animation: dlove-spin 0.8s linear infinite;
+      }
+      @keyframes dlove-spin { to { transform: rotate(360deg); } }
+    </style>
+    <script src="/firebase-config.js"></script>
+    <script type="module" crossorigin src="/assets/js/react-vendor-CwJ3tb2Q.js"></script>
+    <script type="module" crossorigin src="/assets/js/ui-vendor-C7GEge1V.js"></script>
+    <script type="module" crossorigin src="/assets/js/utils-DHDGsjNP.js"></script>
+    <script type="module" crossorigin src="/assets/js/firebase-vendor-Bgin4_ig.js"></script>
+    <script type="module" crossorigin src="/assets/js/main-CdzGKAse.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/css/main-BZBNYuWZ.css">
+  </head>
+  <body>
+    <div id="root">
+      <img src="/logo.webp" alt="DLove" width="64" height="64" class="dlove-shell-logo" />
+      <div class="dlove-shell-spinner" role="status" aria-label="Đang tải"></div>
+    </div>
+  </body>
+</html>
