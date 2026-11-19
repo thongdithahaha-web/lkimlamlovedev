@@ -1,13 +1,10 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" }
+        { "key": "Access-Control-Allow-Methods", "value": "GET, HEAD, OPTIONS" }
       ]
     },
     {
@@ -25,11 +22,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/firebase-config.js", "destination": "/firebase-config.js" },
-    { "source": "/assets/(.*)", "destination": "/assets/$1" },
-    { "source": "/songs/(.*)", "destination": "/songs/$1" },
-    { "source": "/createqr/(.*)", "destination": "/createqr/$1" },
-    { "source": "/images/(.*)", "destination": "/images/$1" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
     { "source": "/terms", "destination": "/terms/index.html" },
     { "source": "/contact", "destination": "/contact/index.html" },
@@ -40,6 +32,6 @@
     { "source": "/ket-qua.html", "destination": "/ket-qua.html" },
     { "source": "/config.html", "destination": "/config.html" },
     { "source": "/config2.html", "destination": "/config2.html" },
-    { "source": "/((?!.*\\.[\\w]+$).*)", "destination": "/index.html" }
+    { "source": "/((?!assets/|songs/|createqr/|images/|.*\\.[\\w]+$).*)", "destination": "/index.html" }
   ]
 }
