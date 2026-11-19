@@ -1,1 +1,126 @@
-{"success":true,"data":{"templateType":"photobouquet","defaultCurrency":"VND","features":{"flyingTexts":{"price":0,"priceUsd":0,"label":"Lời chúc rơi"},"flyingImages":{"price":20000,"priceUsd":0.8,"label":"Ảnh màn mưa"},"bouquetPhotos":{"price":20000,"priceUsd":0.8,"label":"Ảnh bó hoa"},"letter":{"price":10000,"priceUsd":0.4,"label":"Lá thư và một ảnh trong thư"},"customMusic":{"price":15000,"priceUsd":0.6,"label":"Nhạc riêng"},"customSlug":{"price":10000,"priceUsd":0.4,"label":"Link đẹp"},"letterPhoto":{"price":0,"priceUsd":0,"label":"Ảnh trong thư"}},"expiration":{"15d":{"price":0,"priceUsd":0,"label":"15 ngày","days":15},"1month":{"price":10000,"priceUsd":0.4,"label":"1 tháng","days":30},"forever":{"price":30000,"priceUsd":1.2,"label":"Vĩnh viễn","days":null}},"packages":[{"id":"pb-love-v2","label":"Kỷ niệm","price":49000,"priceUsd":3,"popular":true,"includes":["flyingTexts","flyingImages","bouquetPhotos","letter","letterPhoto","customMusic"],"maxPhotos":15,"expiration":"1month"},{"id":"pb-premium-v2","label":"Lưu giữ vĩnh viễn","price":99000,"priceUsd":5,"includes":["flyingTexts","flyingImages","bouquetPhotos","letter","letterPhoto","customMusic","customSlug"],"maxPhotos":30,"expiration":"forever"}],"tipEnabled":true,"tipMaxVnd":null,"tipMaxUsd":null,"photoQuotaFeature":"flyingImages","requirePackage":true,"packageOnlyFeatures":["bouquetPhotos","letter","letterPhoto","flyingImages","customMusic"],"slugOrigin":"https://i.dlove.vn","slugOrigins":{"boysday":"https://i.dlove.vn/19-11","silkgarden":"https://i.dlove.vn/vuon","photobouquet":"https://i.dlove.vn","womenday":"https://w.deargift.online","trungthu":"https://t.deargift.online","valentine":"https://v.deargift.online","happybirthday":"https://hpbd.deargift.online","galaxy":"https://deargift.online","loveplannet":"https://l.deargift.online","teachersday":"https://p.deargift.online","trungthuv2":"https://t.dlove.vn"}}}
+{
+  "success": true,
+  "data": {
+    "templateType": "photobouquet",
+    "defaultCurrency": "VND",
+    "features": {
+      "flyingTexts": {
+        "price": 0,
+        "priceUsd": 0,
+        "label": "Lời chúc rơi"
+      },
+      "flyingImages": {
+        "price": 20000,
+        "priceUsd": 0.8,
+        "label": "Ảnh màn mưa"
+      },
+      "bouquetPhotos": {
+        "price": 20000,
+        "priceUsd": 0.8,
+        "label": "Ảnh bó hoa"
+      },
+      "letter": {
+        "price": 10000,
+        "priceUsd": 0.4,
+        "label": "Lá thư và một ảnh trong thư"
+      },
+      "customMusic": {
+        "price": 15000,
+        "priceUsd": 0.6,
+        "label": "Nhạc riêng"
+      },
+      "customSlug": {
+        "price": 10000,
+        "priceUsd": 0.4,
+        "label": "Link đẹp"
+      },
+      "letterPhoto": {
+        "price": 0,
+        "priceUsd": 0,
+        "label": "Ảnh trong thư"
+      }
+    },
+    "expiration": {
+      "15d": {
+        "price": 0,
+        "priceUsd": 0,
+        "label": "15 ngày",
+        "days": 15
+      },
+      "1month": {
+        "price": 10000,
+        "priceUsd": 0.4,
+        "label": "1 tháng",
+        "days": 30
+      },
+      "forever": {
+        "price": 30000,
+        "priceUsd": 1.2,
+        "label": "Vĩnh viễn",
+        "days": null
+      }
+    },
+    "packages": [
+      {
+        "id": "pb-love-v2",
+        "label": "Kỷ niệm",
+        "price": 49000,
+        "priceUsd": 3,
+        "popular": true,
+        "includes": [
+          "flyingTexts",
+          "flyingImages",
+          "bouquetPhotos",
+          "letter",
+          "letterPhoto",
+          "customMusic"
+        ],
+        "maxPhotos": 15,
+        "expiration": "1month"
+      },
+      {
+        "id": "pb-premium-v2",
+        "label": "Lưu giữ vĩnh viễn",
+        "price": 99000,
+        "priceUsd": 5,
+        "includes": [
+          "flyingTexts",
+          "flyingImages",
+          "bouquetPhotos",
+          "letter",
+          "letterPhoto",
+          "customMusic",
+          "customSlug"
+        ],
+        "maxPhotos": 30,
+        "expiration": "forever"
+      }
+    ],
+    "tipEnabled": true,
+    "tipMaxVnd": null,
+    "tipMaxUsd": null,
+    "photoQuotaFeature": "flyingImages",
+    "requirePackage": true,
+    "packageOnlyFeatures": [
+      "bouquetPhotos",
+      "letter",
+      "letterPhoto",
+      "flyingImages",
+      "customMusic"
+    ],
+    "slugOrigin": "",
+    "slugOrigins": {
+      "boysday": "",
+      "silkgarden": "",
+      "photobouquet": "",
+      "womenday": "",
+      "trungthu": "",
+      "valentine": "",
+      "happybirthday": "",
+      "galaxy": "",
+      "loveplannet": "",
+      "teachersday": "",
+      "trungthuv2": ""
+    }
+  }
+}
