@@ -1,0 +1,1 @@
+import{j as o}from"./fiber-Df1163d-.js";/* empty css                  */function i({height:e=36}){return o.jsx("span",{className:"dlove-logo",style:{"--dlove-logo-height":`${e}px`},"aria-hidden":"true",children:o.jsx("img",{src:"/assets/ui/dlove-gift-logo.png",alt:"",width:"1254",height:"1254",draggable:!1})})}export{i as D};

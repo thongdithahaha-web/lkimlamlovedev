@@ -97,6 +97,30 @@
       "destination": "/api/v2/stickers/canva.json"
     },
     {
+      "source": "/api/v2/music/shared",
+      "destination": "/api/v2/music/shared.json"
+    },
+    {
+      "source": "/api/v2/pricing/photobouquet",
+      "destination": "/api/v2/pricing/photobouquet.json"
+    },
+    {
+      "source": "/api/v2/pricing/trungthuv2",
+      "destination": "/api/v2/pricing/trungthuv2.json"
+    },
+    {
+      "source": "/api/v2/pricing/boysday",
+      "destination": "/api/v2/pricing/boysday.json"
+    },
+    {
+      "source": "/api/v2/pricing/silkgarden",
+      "destination": "/api/v2/pricing/silkgarden.json"
+    },
+    {
+      "source": "/api/v2/pricing/galaxy",
+      "destination": "/api/v2/pricing/galaxy.json"
+    },
+    {
       "source": "/dashboard",
       "destination": "/index.html"
     },
