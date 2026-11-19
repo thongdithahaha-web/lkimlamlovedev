@@ -62,10 +62,18 @@ const server = http.createServer((req, res) => {
     // Try finding the file or route fallbacks
     fs.stat(filePath, (err2, stats2) => {
       if (err2 || !stats2.isFile()) {
-        // Try pathname + '.html'
+        const jsonPath = filePath + '.json';
         const htmlPath = filePath + '.html';
-        if (fs.existsSync(htmlPath)) {
+        if (pathname.startsWith('/api/') && fs.existsSync(jsonPath)) {
+          filePath = jsonPath;
+        } else if (pathname === '/api/v2/reviews/stats' && fs.existsSync(path.join(PUBLIC_DIR, 'api/v2/reviews-stats.json'))) {
+          filePath = path.join(PUBLIC_DIR, 'api/v2/reviews-stats.json');
+        } else if (fs.existsSync(htmlPath)) {
           filePath = htmlPath;
+        } else if (pathname.startsWith('/api/')) {
+          res.writeHead(404, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ success: false, error: 'Endpoint not found' }));
+          return;
         } else {
           // SPA fallback
           filePath = path.join(PUBLIC_DIR, 'index.html');

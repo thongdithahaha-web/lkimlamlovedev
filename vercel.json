@@ -3,35 +3,133 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, HEAD, OPTIONS" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, HEAD, OPTIONS"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/songs/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
-        { "key": "Content-Type", "value": "audio/mpeg" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "audio/mpeg"
+        }
+      ]
+    },
+    {
+      "source": "/api/v2/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/privacy", "destination": "/privacy/index.html" },
-    { "source": "/terms", "destination": "/terms/index.html" },
-    { "source": "/contact", "destination": "/contact/index.html" },
-    { "source": "/tao-website-sinh-nhat", "destination": "/tao-website-sinh-nhat/index.html" },
-    { "source": "/galaxy-viewer", "destination": "/galaxy-viewer.html" },
-    { "source": "/galaxy", "destination": "/galaxy.html" },
-    { "source": "/heartqr.html", "destination": "/heartqr.html" },
-    { "source": "/ket-qua.html", "destination": "/ket-qua.html" },
-    { "source": "/config.html", "destination": "/config.html" },
-    { "source": "/config2.html", "destination": "/config2.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/v2/templates",
+      "destination": "/api/v2/templates.json"
+    },
+    {
+      "source": "/api/v2/home-catalog-order",
+      "destination": "/api/v2/home-catalog-order.json"
+    },
+    {
+      "source": "/api/v2/categories",
+      "destination": "/api/v2/categories.json"
+    },
+    {
+      "source": "/api/v2/reviews/stats",
+      "destination": "/api/v2/reviews-stats.json"
+    },
+    {
+      "source": "/api/v2/reviews",
+      "destination": "/api/v2/reviews.json"
+    },
+    {
+      "source": "/api/v2/stats",
+      "destination": "/api/v2/stats.json"
+    },
+    {
+      "source": "/api/v2/stickers/canva",
+      "destination": "/api/v2/stickers/canva.json"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms/index.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/index.html"
+    },
+    {
+      "source": "/tao-website-sinh-nhat",
+      "destination": "/tao-website-sinh-nhat/index.html"
+    },
+    {
+      "source": "/galaxy-viewer",
+      "destination": "/galaxy-viewer.html"
+    },
+    {
+      "source": "/galaxy",
+      "destination": "/galaxy.html"
+    },
+    {
+      "source": "/heartqr.html",
+      "destination": "/heartqr.html"
+    },
+    {
+      "source": "/ket-qua.html",
+      "destination": "/ket-qua.html"
+    },
+    {
+      "source": "/config.html",
+      "destination": "/config.html"
+    },
+    {
+      "source": "/config2.html",
+      "destination": "/config2.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
