@@ -32,6 +32,6 @@
     { "source": "/ket-qua.html", "destination": "/ket-qua.html" },
     { "source": "/config.html", "destination": "/config.html" },
     { "source": "/config2.html", "destination": "/config2.html" },
-    { "source": "/((?!assets/|songs/|createqr/|images/|.*\\.[\\w]+$).*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
