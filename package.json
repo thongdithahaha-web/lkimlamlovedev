@@ -1,14 +1,14 @@
 {
-  "name": "dlove-vn-clone",
+  "name": "lkimlamlove-vn-clone",
   "version": "1.0.0",
-  "description": "Toàn bộ source code website https://dlove.vn/ - Tạo Website Quà Tặng Số",
+  "description": "Toàn bộ source code website https://lkimlamlove.com/ - Tạo Website Quà Tặng Số",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": [
-    "dlove",
+    "lkimlamlove",
     "gift-website",
     "clone"
   ],

@@ -7,10 +7,10 @@ Tài liệu này hướng dẫn chi tiết cách kết nối cơ sở dữ liệ
 ## BƯỚC 1: Tạo & Cấu hình Project trên Firebase Console
 
 1. Truy cập [https://console.firebase.google.com/](https://console.firebase.google.com/) và đăng nhập tài khoản Google của bạn.
-2. Bấm **"Add project" (Thêm dự án)**, đặt tên cho dự án (ví dụ: `dlove-mygift`).
+2. Bấm **"Add project" (Thêm dự án)**, đặt tên cho dự án (ví dụ: `lkimlamlove-mygift`).
 3. Tắt hoặc bật Google Analytics tùy ý -> Bấm **"Create project"**.
 4. Sau khi tạo xong, ở trang Dashboard, bấm vào biểu tượng Web **`</>`** để thêm Web App:
-   - Đặt App nickname (ví dụ: `dlove-web`).
+   - Đặt App nickname (ví dụ: `lkimlamlove-web`).
    - Bấm **"Register app"**.
    - Firebase sẽ hiển thị đoạn mã `firebaseConfig`. Bạn copy các thông số đó:
      ```javascript
@@ -58,8 +58,8 @@ Tài liệu này hướng dẫn chi tiết cách kết nối cơ sở dữ liệ
 2. Chọn mục **"Authorized domains"** (Miền được ủy quyền).
 3. Bấm **"Add domain"** và thêm các domain sau:
    - `localhost` (mặc định đã có)
-   - Tên miền Vercel của bạn (ví dụ: `dlove-mygift.vercel.app`)
-   - Tên miền riêng của bạn (ví dụ: `dlove.vn`, `mygift.com`, `quatang.net`)
+   - Tên miền Vercel của bạn (ví dụ: `lkimlamlove-mygift.vercel.app`)
+   - Tên miền riêng của bạn (ví dụ: `lkimlamlove.com`, `mygift.com`, `quatang.net`)
 
 ---
 
@@ -114,7 +114,7 @@ Tài liệu này hướng dẫn chi tiết cách kết nối cơ sở dữ liệ
    ```bash
    git init
    git add .
-   git commit -m "Initial commit DLove full clone"
+   git commit -m "Initial commit LKimLamLove full clone"
    git branch -M main
    git remote add origin <link-repo-github>
    git push -u origin main
@@ -123,6 +123,6 @@ Tài liệu này hướng dẫn chi tiết cách kết nối cơ sở dữ liệ
 
 ### Gắn Domain riêng trên Vercel:
 1. Vào project trên **Vercel Dashboard** -> Chọn **Settings** -> **Domains**.
-2. Nhập domain của bạn (ví dụ: `dlove.vn` hoặc `mygift.com`) -> Bấm **"Add"**.
+2. Nhập domain của bạn (ví dụ: `lkimlamlove.com` hoặc `mygift.com`) -> Bấm **"Add"**.
 3. Cấu hình bản ghi DNS tại nhà cung cấp tên miền của bạn theo hướng dẫn của Vercel (bản ghi A `@ -> 76.76.21.21` hoặc CNAME).
 4. Sau khi domain Active, nhớ quay lại **Bước 3** để điền domain này vào **Authorized domains** của Firebase!

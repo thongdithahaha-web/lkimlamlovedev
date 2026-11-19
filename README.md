@@ -1,6 +1,6 @@
-# DLove.vn - Toàn Bộ Source Code Clone
+# LKimLamLove.vn - Toàn Bộ Source Code Clone
 
-Source code đầy đủ của website [https://dlove.vn/](https://dlove.vn/) (Nền tảng tạo website quà tặng số - Valentine, Sinh nhật, Tết, Vũ trụ kỷ niệm).
+Source code đầy đủ của website [https://lkimlamlove.com/](https://lkimlamlove.com/) (Nền tảng tạo website quà tặng số - Valentine, Sinh nhật, Tết, Vũ trụ kỷ niệm).
 
 > **Cam kết:** Toàn bộ code, chunk, script, stylesheet, tài nguyên hình ảnh và âm thanh đều được trích xuất trực tiếp nguyên bản từ website thực tế, **không tự chế hay chắp vá bất kỳ dòng code nào**.
 
@@ -20,7 +20,7 @@ d:\h\
 ├── logo.webp / logo-text.webp      # Logo thương hiệu
 ├── favicon.ico / favicon-*.png     # Toàn bộ icon các kích thước
 ├── hero-love-visual.webp           # Ảnh minh họa Hero banner
-├── dlove-gift-logo.png             # Logo quà tặng
+├── lkimlamlove-gift-logo.png             # Logo quà tặng
 ├── fingerprint.png / support.png   # Hình ảnh minh họa tính năng
 ├── bg-remove.worker.js             # Web Worker xử lý tách nền ảnh
 ├── detect-devtools.js              # Script chống mở DevTools

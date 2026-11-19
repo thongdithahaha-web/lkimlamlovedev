@@ -1,4 +1,4 @@
-# robots.txt for DLove Website
+# robots.txt for LKimLamLove Website
 # Chỉ dẫn cho các search engine bots
 
 # Cho phép tất cả bot tốt (Google, Bing, etc.)
@@ -65,4 +65,4 @@ Disallow: /galaxy/create
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://dlove.vn/sitemap.xml
+Sitemap: https://lkimlamlove.com/sitemap.xml

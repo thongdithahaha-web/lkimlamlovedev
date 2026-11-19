@@ -1,6 +1,6 @@
 /**
  * =========================================================================
- * DLove.vn - Cấu hình Firebase & Firestore Database
+ * LKimLamLove.vn - Cấu hình Firebase & Firestore Database
  * =========================================================================
  * 
  * HƯỚNG DẪN ĐIỀN THÔNG TIN FIREBASE CỦA BẠN:
@@ -67,9 +67,9 @@ window.FIREBASE_CONFIG = window.FIREBASE_CONFIG || {
         firebase.initializeApp(window.FIREBASE_CONFIG);
       }
       var db = firebase.firestore();
-      window.DLoveDB = db;
+      window.LKimLamLoveDB = db;
 
-      window.DLoveFirebase = {
+      window.LKimLamLoveFirebase = {
         db: db,
         auth: firebase.auth(),
 
@@ -85,9 +85,9 @@ window.FIREBASE_CONFIG = window.FIREBASE_CONFIG || {
             role: user.role || "user",
             lastLoginAt: firebase.firestore.FieldValue.serverTimestamp()
           }, { merge: true }).then(function() {
-            console.log("[DLove Firestore] Đã lưu thông tin người dùng:", uid);
+            console.log("[LKimLamLove Firestore] Đã lưu thông tin người dùng:", uid);
           }).catch(function(err) {
-            console.warn("[DLove Firestore] Lưu thông tin user (Firestore):", err.message);
+            console.warn("[LKimLamLove Firestore] Lưu thông tin user (Firestore):", err.message);
           });
         },
 
@@ -97,7 +97,7 @@ window.FIREBASE_CONFIG = window.FIREBASE_CONFIG || {
           return db.collection("gifts").doc(id).set(Object.assign({}, giftData, {
             updatedAt: firebase.firestore.FieldValue.serverTimestamp()
           }), { merge: true }).then(function() {
-            console.log("[DLove Firestore] Đã lưu quà tặng ID:", id);
+            console.log("[LKimLamLove Firestore] Đã lưu quà tặng ID:", id);
             return id;
           });
         },
@@ -121,12 +121,12 @@ window.FIREBASE_CONFIG = window.FIREBASE_CONFIG || {
         }
       };
 
-      console.log("%c[DLove Firebase] Đã kết nối Firebase & Firestore thành công!", "color: #10B981; font-weight: bold; font-size: 13px;");
-      console.log("[DLove Firebase] Project ID:", window.FIREBASE_CONFIG.projectId);
-      console.log("[DLove Firebase] Auth Domain:", window.FIREBASE_CONFIG.authDomain);
-      console.log("[DLove Firebase] Domain hiện tại:", window.location.hostname);
+      console.log("%c[LKimLamLove Firebase] Đã kết nối Firebase & Firestore thành công!", "color: #10B981; font-weight: bold; font-size: 13px;");
+      console.log("[LKimLamLove Firebase] Project ID:", window.FIREBASE_CONFIG.projectId);
+      console.log("[LKimLamLove Firebase] Auth Domain:", window.FIREBASE_CONFIG.authDomain);
+      console.log("[LKimLamLove Firebase] Domain hiện tại:", window.location.hostname);
     } catch (e) {
-      console.warn("[DLove Firebase Init]", e.message);
+      console.warn("[LKimLamLove Firebase Init]", e.message);
     }
   }
 

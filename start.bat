@@ -1,9 +1,9 @@
 @echo off
 chcp 65001 >nul
-title DLove.vn - Local Test Server
+title LKimLamLove.vn - Local Test Server
 
 echo ================================================================
-echo           DLOVE.VN - LOCAL DEVELOPMENT SERVER
+echo           LKIMLAMLOVE.VN - LOCAL DEVELOPMENT SERVER
 echo ================================================================
 echo.
 
